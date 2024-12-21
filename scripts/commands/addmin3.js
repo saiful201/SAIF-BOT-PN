@@ -27,7 +27,7 @@ const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
   
 var callback = () => api.sendMessage({body:`
-●❯──────────────────❮●
+●❯─────────────────❮●
 𝐍𝐚𝐦𝐞       :- 𝐙𝐡𝐞 𝐘𝐮𝐚𝐧(𝐉𝐞𝐯𝐚𝐧)
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 :- 𝐙𝐡𝐞 𝐘𝐮𝐚𝐧 
 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   :- 𝐈𝐬𝐥𝐚𝐦
@@ -41,7 +41,7 @@ var callback = () => api.sendMessage({body:`
 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩:- wa.me/+𝐞𝐢 𝐝𝐚 𝐨𝐨 𝐤𝐨𝐦𝐨 𝐧𝐚(😑)
 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  :-𝐭.𝐦𝐞/𝐧𝐚𝐢(🥹)
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 :-𝐡𝐭𝐭𝐩𝐬://𝐰𝐰𝐰.𝐟𝐚𝐜𝐞𝐛𝐨𝐨𝐤.𝐜𝐨𝐦/𝐳𝐡𝐞.𝐲𝐮𝐚𝐧.261874
-●❯───────────────────❮●`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
+●❯──────────────────❮●`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(encodeURI(`https://graph.facebook.com/61567467803735/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
