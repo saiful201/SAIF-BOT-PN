@@ -102,8 +102,3 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
       () => fs.unlinkSync(pathImg),
       event.messageID);
     }
-
-
-
-
-
