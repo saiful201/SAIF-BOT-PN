@@ -1,25 +1,17 @@
-const fetch = require("node-fetch");
-const axios = require("axios");
-const fs = require("fs");
-const path = require("path");
-const ytSearch = require("yt-search");
-const https = require("https");
-
-module.exports = {
-  config: {
-    name: "music",
-    version: "1.0.3",
-    hasPermssion: 0,
-    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-    description: "Download YouTube song from keyword search and link",
-    commandCategory: "Media",
-    usages: "[songName] [type]",
+module.exports.config = {
+	name: "music",
+    version: "1.0.1",
+    permission: 0,
+    credits: "Nayan",
+    prefix: true,
+    description: "ask any thing",
+    category: "admin",
+    usages: "",
     cooldowns: 5,
     dependencies: {
-      "node-fetch": "",
-      "yt-search": "",
-    },
-  },
+        "openai": ""
+    }
+};
 
   run: async function ({ api, event, args }) {
     let songName, type;
